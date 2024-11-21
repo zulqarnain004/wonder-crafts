@@ -17,6 +17,7 @@ import {
   Avatar,
   Input,
 } from "@mui/material";
+import styled from 'styled-components'
 import moment from "moment";
 
 export default function Home() {
@@ -99,6 +100,7 @@ export default function Home() {
 
   return (
     <>
+    <checkIn />
       <Container>
         <Typography variant="h4" sx={{ marginBottom: 2 }}>
           Add Check In
@@ -209,3 +211,9 @@ export default function Home() {
     </>
   );
 }
+
+const checkIn = styled.section`
+width: 90%;
+height: 300px;
+background-color: black;
+`
